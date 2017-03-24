@@ -9,9 +9,6 @@ import org.testng.annotations.BeforeTest;
 
 import java.util.concurrent.TimeUnit;
 
-/**
- * Created by dmitry on 14.03.17.
- */
 public class Init {
 
     WebDriver driver;
