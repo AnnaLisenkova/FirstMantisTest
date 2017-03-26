@@ -75,6 +75,8 @@ public class SimpleTest extends Init {
         //Check deleted task
         List<WebElement> elements2 = driver.findElements(By.xpath("//*[@id=\"buglist\"]/tbody/tr/td[11]"));
         String unexpected = "JavaMade2";
-        Assert.assertFalse(elements2.stream().anyMatch(e -> e.getText().contains(unexpected)));
+        if(elements2.size()!=0) {
+            Assert.assertFalse(elements2.stream().anyMatch(e -> e.getText().contains(unexpected)));
+        }
     }
 }
